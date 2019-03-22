@@ -1,0 +1,50 @@
+<script>
+    // function celula (){
+        // var x=document.getElementById("nome").value;
+        // document.getElementById("cel1").innerHTML=x;
+
+        // for (i=1; i<10; i++) {
+        //   var x=document.getElementById("nome").value;
+        //   document.getElementById("cel"+i).innerHTML=x;       
+        // }
+            // while () {}
+    // }
+
+        function avancar (){
+            var x=0;
+            for (i=1; i<10; i++){
+                if (document.getElementById("cel"+i).innerHTML == "000"){
+                    document.getElementById("cel"+i).innerHTML = "xxx";
+                    x=i+1;
+                    if (x==10){
+                        x = 1;
+                    }
+                    document.getElementById("cel"+x).innerHTML = "000";
+                    break;
+                } 
+            }
+        }
+    
+
+</script>
+
+<body>
+    <input type="button" value="GO!" onclick="avancar ();">
+    <table id=celTotal border="1px">
+        <tr>
+            <td id="cel1">000</td>
+            <td id="cel2">xxx</td>
+            <td id="cel3">xxx</td>
+        </tr>
+        <tr>
+            <td id="cel4">xxx</td>
+            <td id="cel5">xxx</td>
+            <td id="cel6">xxx</td>
+        </tr>
+        <tr>
+            <td id="cel7">xxx</td>
+            <td id="cel8">xxx</td>
+            <td id="cel9">xxx</td>
+        </tr>        
+    </table>
+</body>

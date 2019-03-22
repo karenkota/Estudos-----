@@ -1,0 +1,48 @@
+<script>
+    document.write("Hi, world! <br>");
+    var x=3;
+    var y=1;
+    document.write((x+y)/2 +"<br>");
+    var array = [];
+    array[0]="a";
+    array[5]="c";
+    document.write (array[4]+"<br>");
+
+    // document.wirte x console.log
+    var n = 25;
+    n = 9;
+    if (n >=10){ 
+        document.write ("maior ou igual a 10!<br>");
+    } else {
+        document.write ("menor que 10<br>");
+    }
+    
+    for(i=0; i<10; i+=2){
+        document.write(i+"<br>");
+    }
+
+    var tabuada = 6;
+    for (i=0; i<=10; i++){ // tabuada com for
+        document.write(i+"*"+tabuada+"="+i*tabuada+"<br>")
+    }
+
+    // uso de PROMPT, ALERT, CONFIRM
+    var i=0; 
+    var tabuada=prompt ("DIGITE SEU NUMERO");
+        while (i<=10){ //tabuada com wuile
+        document.write(i+"*"+tabuada + "="+i*tabuada+"<br>");
+        i++;
+    }
+
+
+    alert ("bom dia!");
+    
+    // CONFIRM, sempre duas opcoes = Ok, cancela
+    if (confirm ("TABUADA ESTA CORRETA?")){
+        alert("Obrigada por utilizar nosso sistema!");
+    } else{
+        alert("SORRY!");
+    }
+
+    
+</script>

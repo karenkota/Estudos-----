@@ -1,0 +1,50 @@
+<script>
+function texto (){
+    alert("hello world!");
+}
+// texto ();
+
+function soma (x,y){
+    return x+y;
+}
+document.write ("<br>"+soma(2,6));
+document.write ("<br>");
+
+function subtracao (x,y){
+    return x-y;
+}
+document.write ("<br>"+subtracao(2,6));
+document.write ("<br>");
+
+function multiplicacao (x,y){
+    return x*y;
+}
+document.write ("<br>"+ multiplicacao(2,6));
+document.write ("<br>");
+
+function divisao (x,y){
+    return x/y;
+}
+document.write ("<br>"+divisao(2,6));
+document.write ("<br>");
+
+function contas (){
+    // acessa o id colocado no input type
+    var txt = document.getElementById("n1").value;
+    var txt2 = document.getElementById("n2").value;
+    // transf em numero inteiro
+    alert (parseInt(txt)+parseInt(txt2));
+}
+
+document.write ("<br>");
+
+</script>
+
+<br>
+
+<body>
+   <input type = "text" id="n1">
+   <input type = "text" id="n2">
+   <input type="button" value="OK" onclick="contas();">
+   
+</body>

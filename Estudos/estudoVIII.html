@@ -1,0 +1,60 @@
+<!-- validacao de formulario -->
+<script>
+    function validacao(){
+       var x=document.getElementById("senha").value;
+       var y=document.getElementById("confirmacao").value;
+       if (x==y){
+            alert ("senhas OK");
+       } else {
+           alert ("senhas sao diferentes");
+       }
+
+       var tamanho=document.getElementById("nome").value;
+       var tam2=tamanho.length;
+       if (tam2 <= 10){
+           alert ("nome valido");
+       } else {
+           alert ("nome possui carcteres demais");
+       }
+
+       var conteudo=document.getElementById("mail").value;
+    //    alert(conteudo.includes("@"));
+    //    alert(conteudo.includes("."));
+       if ((conteudo.includes("@") == false || conteudo.includes(".") == false) && conteudo.includes("*") == true){
+            alert ("e-mail invalido");
+       } else {
+           alert ("e-mail ok");
+       }
+    }
+
+</script>
+
+<body>
+    <table border=1>
+        <tr>
+            <td>DIGITE SEU NOME</td>
+            <td><input type="text" id="nome"></td>
+        </tr>
+
+        <tr>
+            <td>DIGITE SUA SENHA</td>
+            <td> <input type="text" id="senha"></td>
+        </tr>
+
+
+        <tr>
+            <td>CONFIRME SUA SENHA</td>
+            <td> <input type="text" id="confirmacao"></td>
+        </tr>
+
+        <tr>
+            <td>DIGITE SEU E-MAIL</td>
+            <td><input type="text" id="mail"></td>
+        </tr>
+        
+        <tr>
+            <!-- essa coluna vale por 2 (colspan) -->
+            <td align=center colspan="2"><button onclick="validacao();">ENVIAR</button></td>
+        </tr>
+    </table>
+</body>

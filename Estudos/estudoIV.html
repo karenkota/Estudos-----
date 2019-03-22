@@ -1,0 +1,44 @@
+<script>
+function soma (){
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+    
+    alert (parseInt(x)+parseInt(y));
+}
+function subtracao (){
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+    
+    alert (parseInt(x)-parseInt(y));
+}
+function multiplicacao (){
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+    
+    alert (parseInt(x)*parseInt(y));
+}
+function divisao (){
+    var x = document.getElementById("x").value;
+    var y = document.getElementById("y").value;
+    
+    alert (parseInt(x)/parseInt(y));
+}
+// function teste(){
+//     document.getElementById("x").value = "karen";
+// }
+
+</script>
+
+<body>
+    <input type="text" id="x"><br>
+    <input type="text" id="y"><br>
+
+    <span>
+        <input type="button" value="+" onclick="soma();">
+        <input type="button" value="-" onclick="subtracao();">
+        <input type="button" value="*" onclick="multiplicacao();">
+        <input type="button" value="/" onclick="divisao();"> 
+        <!-- <input type="button" value="novo" onclick="teste();">  -->
+    </span>
+    
+</body>

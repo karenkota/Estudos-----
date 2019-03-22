@@ -1,0 +1,89 @@
+
+<script>
+function confirmacao(){
+    var x=document.getElementById("nome").value;
+    document.getElementById("confirmacao-nome").innerHTML="nome: "+x;
+
+    var y=document.getElementById("RG").value;
+    document.getElementById("confirmacao-RG").innerHTML="RG: "+y;
+
+    var x=document.getElementById("CPF").value;
+    document.getElementById("confirmacao-CPF").innerHTML="CPF: "+x;
+
+    var x=document.getElementById("cidade").value;
+    document.getElementById("confirmacao-cidade").innerHTML="cidade: "+x;
+
+    var x=document.getElementById("estado").value;
+    document.getElementById("confirmacao-estado").innerHTML="estado: "+x
+}
+function atualizar(){
+    var w=document.getElementById("nome").value;
+    document.getElementById("nomezinho").innerHTML="nome: "+w;
+
+    var w=document.getElementById("RG").value;
+    document.getElementById("RGzinho").innerHTML="RG: "+w;
+
+    var w=document.getElementById("CPF").value;
+    document.getElementById("CPFzinho").innerHTML="CPF: "+w;
+
+    var w=document.getElementById("cidade").value;
+    document.getElementById("cidadezinha").innerHTML="cidade: "+w;
+
+    var w=document.getElementById("estado").value;
+    document.getElementById("estadozinho").innerHTML="estado: "+w;
+}
+</script>
+
+<body>    
+<table id="formulario">
+    <tr>
+        <td>NOME:</td>
+        <td><input type="text" id="nome" onkeypress="atualizar();"></td>
+        <td id=confirmacao-nome></td>
+    </tr>
+    <tr>
+        <td>RG:</td>
+        <td><input type="text" id="RG" onkeypress="atualizar();"></td>
+        <td id=confirmacao-RG></td>
+    </tr>
+    <tr>
+        <td>CPF:</td>
+        <td><input type="text" id="CPF" onkeypress="atualizar();"></td>
+        <td id=confirmacao-CPF></td>
+    </tr>
+    <tr>
+        <td>CIDADE:</td>
+        <td><input type="text" id="cidade" onkeypress="atualizar();"></td>
+        <td id=confirmacao-cidade></td>
+    </tr>
+    <tr>
+        <td>ESTADO:</td>
+        <td><input type="text" id="estado" onkeypress="atualizar();"></td>
+        <td id=confirmacao-estado></td>
+    </tr>
+</table>
+<input type="button" value="OK" onclick="confirmacao();">
+
+<br>
+<br>
+<div id="container">
+    <div>RESUMO</div>
+
+    <div id="nomezinho">
+        nome:
+    </div> 
+    <div id="RGzinho">
+        RG:
+    </div>
+    <div id="CPFzinho">
+        CPF:
+    </div>
+    <div id="cidadezinha">
+        cidade:
+    </div>
+    <div id="estadozinho">
+        estado:
+    </div>
+</div>
+
+</body>

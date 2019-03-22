@@ -1,0 +1,36 @@
+<!-- <script>
+function soma (){
+    document.getElementById("y").value = parseInt(document.getElementById("y").value)+1;
+}
+function subtracao (){
+    document.getElementById("y").value = parseInt(document.getElementById("y").value)-1;
+}
+</script> -->
+
+<!-- github e maluco -->
+
+
+<script>
+        function soma (){
+            var numero=parseInt(document.getElementById("y").value);
+            numero++;
+            document.getElementById("y").value=numero;
+        }
+        function subtracao (){
+            var numero=parseInt(document.getElementById("y").value);
+            numero-=1;
+            document.getElementById("y").value=numero;
+        }
+
+        var git= "maluco";
+    </script>
+
+<body>
+    <span>
+        <input type="button" value="-" onclick="subtracao();">
+        <input type="text" id="y" value="0">
+        <input type="button" value="+" onclick="soma();">
+    </span>
+</body>
+
+

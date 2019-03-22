@@ -1,0 +1,32 @@
+<script>
+    // // pega conteudo do <p> para jogar no <alert>
+    // function star (){
+    //     var x=document.getElementById("hi").innerHTML;
+    //     alert(x);
+    // }
+
+    // // mudar conteudo do <p>
+    //         function star (){
+    //     document.getElementById("hi").innerHTML = "frase qualquer";
+    //     // alert(x);
+    // }
+
+    function who (){
+        var x=document.getElementById("nome").value;
+        document.getElementById("querido").innerHTML="Querido(a), " + x;
+    }
+
+    
+</script>
+
+<body>
+    <!-- <p id="hi">Ola, mundo!!!!!! brilha star!</p>
+    <button id="hel" onClick="star();">"hello"</button> -->
+
+    <input type="text" id="nome">
+    <input type="button" value="OK" onclick="who();">
+    <p id="querido"> Querido, fulano ...</p>
+    <div>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel tellus vitae neque fermentum interdum. Donec enim nisi, placerat in mauris in, commodo lobortis enim. Cras dictum turpis nec varius tristique. In non tempus orci. Mauris sed nulla placerat, rutrum diam sed, euismod libero. Sed vitae massa tincidunt, placerat tellus eu, tincidunt felis. Pellentesque id arcu felis. Nunc consequat eros magna, non iaculis urna feugiat eu. Aliquam pretium bibendum nunc, et tristique risus egestas eu. In scelerisque magna sed nisi rhoncus, id vestibulum risus sodales. Nulla facilisi.
+    </div>
+</body>
